@@ -55,7 +55,7 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialSection() {
  return (
-        <section className="max-w-7xl mx-auto px-6 py-24 bg-white testimonials-swiper">
+        <section className="mx-auto px-6 py-24 bg-white testimonials-swiper relative">
             <div className="text-center mb-16">
                 <span className="text-[#cd6d22] font-bold text-lg block mb-4">
                     Testimonios de nuestros visitantes
@@ -65,18 +65,22 @@ export function TestimonialSection() {
                 </h2>
             </div>
 
-            <Swiper
+            <div className="relative pb-20">
+
+            <Swiper 
                 modules={[Pagination, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 5000 }}
+                
                 breakpoints={{
                     640: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 },
                 }}
-                className="pb-16"
+                
+                
             >
                 {testimonials.map((t, index) => (
                     <SwiperSlide key={index}>
@@ -99,14 +103,18 @@ export function TestimonialSection() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            </div>
 
             {/* Estilos personalizados para los puntitos naranjas */}
             <style>{`
+                .testimonials-swiper .swiper {
+                    overflow: visible;
+                }
                 .testimonials-swiper .swiper-pagination-bullet {
                     background: #d1d1d1;
                     opacity: 1;
-                    width: 12px;
-                    height: 12px;
+                    width: 10px;
+                    height: 10px;
                 }
                 .testimonials-swiper .swiper-pagination-bullet-active {
                     background: #cd6d22 !important;
@@ -114,7 +122,7 @@ export function TestimonialSection() {
                     border-radius: 10px;
                 }
                 .testimonials-swiper .swiper-pagination {
-                    bottom: 0 !important;
+                    bottom: -25px !important;
                 }
             `}</style>
         </section>

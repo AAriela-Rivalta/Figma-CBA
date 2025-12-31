@@ -37,6 +37,11 @@ export function Home() {
                             se sostiene con esfuerzo. Por eso cada visita importa, y cada gesto de respeto también.</p>
                     </>
                 }
+                buttonConfig={{
+                    label: "Conocé más sobre La Cumbrecita -->",
+                    variant: "primary",
+                    to: "https://lacumbrecita.gob.ar/index.html"
+                }}
 
             />
             
@@ -62,6 +67,11 @@ export function Home() {
                         <br />• Las <strong>excursiones largas</strong> deben realizarse con <strong>guías habilitados.</strong></p>
                     </>
                 }
+                buttonConfig={{
+                    label: "Ver todas las recomendaciones -->",
+                    variant: "primary",
+                    to: "https://lacumbrecita.gob.ar/index.html"
+                }}
 
             />
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 interface AboutSectionProps {
     tagline: string;
@@ -10,9 +11,15 @@ interface AboutSectionProps {
         bottomLeft: string;
         bottomRight: string;
     }
+    buttonConfig?: {
+    label: string;
+    variant: 'primary' | 'secondary';
+    to?: string;
+    onClick?: () => void;
+  };
 }
 
-export function AboutSection({ tagline, title, description, imagenes }: AboutSectionProps) {
+export function AboutSection({ tagline, title, description, imagenes, buttonConfig }: AboutSectionProps) {
    return (
         /* Cambiamos grid-cols-2 por grid-cols-1 y md:grid-cols-2 */
         <section className="max-w-7xl mx-auto py-12 md:py-24 px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center font-sans">
@@ -28,7 +35,23 @@ export function AboutSection({ tagline, title, description, imagenes }: AboutSec
                 <div className="text-[#333333] text-sm md:text-base space-y-4 leading-relaxed">
                     {description}
                 </div>
+
+
+                {buttonConfig && (
+                <div className="pt-4">
+                    <Button 
+                        label={buttonConfig.label} 
+                        variant={buttonConfig.variant} 
+                        to={buttonConfig.to}
+                        onClick={buttonConfig.onClick}
+                />
+                </div>
+                 )}
+
             </div>
+            
+            
+      
 
             {/* Imágenes: En móvil van debajo del texto */}
             <div className="grid grid-cols-3 grid-rows-2 gap-2 md:gap-3 h-75 md:h-125">

@@ -28,6 +28,17 @@ export function Layouts() {
                 title="Bienvenidos a La Cumbrecita"
                 subtitle="Una reserva natural peatonal única en el país"
                 bgImage={fondo}
+                buttonConfig1={{
+                    label: "Descubrí por qué protegerla ",
+                    variant: "primary",
+                    to: "https://lacumbrecita.gob.ar/index.html"
+                }}
+                buttonConfig2={{
+                    label: "Reservá tu estacionamiento ",
+                    variant: "secondary",
+                    to: "/new-reserva"
+                }}
+                
                 />
                 
             </header>

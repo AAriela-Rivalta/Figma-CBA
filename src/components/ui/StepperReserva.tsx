@@ -5,6 +5,8 @@ import img15 from '../imagenes/img15.jpeg'
 import img16 from '../imagenes/img16.jpeg'
 import img17 from '../imagenes/img17.jpeg'
 
+import Button from "./Button";
+
 const stepContent = [ //Contenido del stapper
   {
     number: 1, //numero de paso
@@ -61,6 +63,14 @@ export function StepperReserva() {
                 onClick={() => setActiveStep(step.number)} //al clickear → cambia el paso a activo
               />
             ))}
+          </div>
+
+          <div className="flex flex-wrap gap-5 mt-4 ">
+            <Button 
+              label="Hacer mi reserva -->" 
+              variant="primary" 
+              to="/new-reserva" 
+            />
           </div>
           
         </div>
