@@ -55,17 +55,17 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialSection() {
  return (
-        <section className="mx-auto px-6 py-24 bg-white testimonials-swiper relative">
+        <section className="mx-auto px-6 py-24 bg-[#f7f4f0] dark:bg-[#4d4c4c] testimonials-swiper relative overflow-hidden">
             <div className="text-center mb-16">
                 <span className="text-[#cd6d22] font-bold text-lg block mb-4">
                     Testimonios de nuestros visitantes
                 </span>
-                <h2 className="text-4xl md:text-5xl font-bold text-[#333333]">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#333333] dark:text-white">
                     Lo que dicen quienes ya <br /> vivieron la experiencia
                 </h2>
             </div>
 
-            <div className="relative pb-20">
+            <div className="relative pb-20 max-w-full">
 
             <Swiper 
                 modules={[Pagination, Autoplay]}
@@ -84,7 +84,7 @@ export function TestimonialSection() {
             >
                 {testimonials.map((t, index) => (
                     <SwiperSlide key={index}>
-                        <div className="bg-[#f7f4f0] p-10 rounded-3xl h-full flex flex-col shadow-sm border border-transparent hover:border-[#EEE9E1] transition-all">
+                        <div className="bg-white p-10 rounded-3xl h-full flex flex-col shadow-sm border border-transparent hover:border-[#EEE9E1] transition-all">
                             <div className="flex items-center gap-4 mb-6">
                                 <img 
                                     src={t.avatar} 

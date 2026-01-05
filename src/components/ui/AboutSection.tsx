@@ -29,10 +29,10 @@ export function AboutSection({ tagline, title, description, imagenes, buttonConf
                 <span className="text-[#cd6d22] font-semibold text-sm uppercase tracking-wider">
                     {tagline}
                 </span>
-                <h2 className="text-3xl md:text-5xl font-bold text-[#333333] leading-tight">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#333333] dark:text-white leading-tight">
                     {title}
                 </h2>
-                <div className="text-[#333333] text-sm md:text-base space-y-4 leading-relaxed">
+                <div className="text-[#333333] dark:text-white text-sm md:text-base space-y-4 leading-relaxed">
                     {description}
                 </div>
 

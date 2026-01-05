@@ -46,7 +46,7 @@ export function StepperReserva() {
           <span className="text-[#cd6d22] font-bold text-sm uppercase tracking-widest block mb-4"> {/* • Texto chico, naranja, espaciado → subtítulo */}
             Paso a paso para reservar tu lugar
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#333333] leading-tight mb-10 text-balance">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#333333] dark:text-white leading-tight mb-10 text-balance">
             ¿Cómo reservo mi lugar de estacionamiento?
           </h2>
 
@@ -124,13 +124,13 @@ function StepItem({ number, title, description, active, isLast, isCompleted, onC
       </div>
 
       <div className="flex flex-col pt-1">
-        <h3 className={`font-bold text-xl transition-colors duration-300 ${active ? "text-[#cd6d22]" : "text-[#333333]/60"}`}> 
+        <h3 className={`font-bold text-xl transition-colors duration-300 ${active ? "text-[#cd6d22]" : "text-[#333333]/60 dark:text-white"}`}> 
           {title}:
         </h3> {/*•Titulo resaltado si está activo •Atenuado si no*/}
 
         {/* La descripción solo aparece si está activo */}
         <div className={`overflow-hidden transition-all duration-500 ${active ? "max-h-40 opacity-100 mt-1" : "max-h-0 opacity-0"}`}> {/*•Si está activo → aparece •Si no → se colapsa */}
-          <p className="text-gray-500 text-sm leading-relaxed max-w-sm"> {/*•Texto descriptivo del paso */}
+          <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed max-w-sm"> {/*•Texto descriptivo del paso */}
             {description}
           </p>
         </div>

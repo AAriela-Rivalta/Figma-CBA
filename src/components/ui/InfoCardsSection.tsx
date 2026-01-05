@@ -14,7 +14,7 @@ export function InfoCardsSection() {
                 <span className="text-[#cd6d22] font-bold text-lg block mb-4">
                     ¿Por qué se cobra estacionamiento?
                 </span>
-                <h2 className="text-4xl md:text-5xl font-bold text-[#333333] leading-tight max-w-3xl mx-auto">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#333333] dark:text-white leading-tight max-w-3xl mx-auto">
                     El monto que abonás al estacionar se utiliza para:
                 </h2>
             </div>

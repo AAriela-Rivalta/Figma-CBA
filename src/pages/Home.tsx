@@ -17,6 +17,7 @@ import {StepperReserva} from "../components/ui/StepperReserva"
 export function Home() {
     return (
         <>
+            <div className="bg-[#f7f4f0] dark:bg-[#4d4c4c] transition-colors duration-300">
             <AboutSection 
                 tagline="Nuestro pueblo"
                 title="Colaborando con la protección de un entorno único en Argentina"
@@ -47,7 +48,7 @@ export function Home() {
             
             <FeatureSection />
 
-            <div className="bg-[#f7f4f0]">
+            <div className="bg-[#f7f4f0] dark:bg-[#4d4c4c]">
             <AboutSection 
                 tagline="Recomendaciones"
                 title="Antes de visitarnos, tené en cuenta:"
@@ -79,7 +80,7 @@ export function Home() {
             
             <InfoCardsSection />
 
-            <div className="bg-[#f7f4f0]">
+            <div className="bg-[#f7f4f0] dark:bg-[#4d4c4c]">
             <StepperReserva />
             </div>
 
@@ -90,7 +91,9 @@ export function Home() {
                 subtitle="La Cumbrecita es más que un destino. Es un refugio, una experiencia, un compromiso con la naturaleza. 
                     Y ese compromiso también es tuyo, cuando elegís visitarnos con respeto ¡Gracias por ser parte!"
                 bgImage={img13}
-                />
+            />
+
+            </div>
 
 
             

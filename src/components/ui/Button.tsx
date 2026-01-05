@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -12,8 +11,8 @@ interface ButtonProps {
 const Button = ({ label, variant, to, onClick }: ButtonProps) => {
   const baseStyles = "px-6 py-2 rounded-md font-medium transition-colors duration-200 inline-block text-center";
   const variantStyles = {
-    primary: "bg-[#CD6D22] text-white hover:bg-[#b55d1d]",
-    secondary: "bg-[#EEE9E1] text-[#5C493C] hover:bg-[#e5dfd5]",
+    primary: "bg-[#CD6D22] text-white hover:bg-[#b55d1d] ]",
+    secondary: "bg-[#EEE9E1] text-[#5C493C] hover:bg-[#e5dfd5] dark:bg-[#2d2d2d] dark:text-[#F7F4F0] dark:hover:bg-[#1a1a1a]",
   };
 
   const combinedStyles = `${baseStyles} ${variantStyles[variant]}`;

@@ -10,7 +10,7 @@ interface FeatureCardProps {
 
 function FeatureCard ({Icon, title, description}: FeatureCardProps) {
     return (
-        <div className="bg-[#f7f4f0] hover:bg-[#EEE9E1] p-8 rounded-3xl flex flex-col items-center text-center shadow-sm">
+        <div className="bg-white hover:bg-[#EEE9E1] p-8 rounded-3xl flex flex-col items-center text-center shadow-sm">
             {/* Contenedor del Icono */}
             <div className="w-16 h-16 mb-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Icon className="text-3xl text-[#4a3f35]" />
@@ -29,12 +29,12 @@ function FeatureCard ({Icon, title, description}: FeatureCardProps) {
 
 export function FeatureSection() {
     return (
-        <section className="max-w-7xl mx-auto px-6 py-24 bg-white">
+        <section className="max-w-7xl mx-auto px-6 py-24 bg-[#f7f4f0] dark:bg-[#4d4c4c]">
             <div className="text-center mb-16">
                 <span className="text-[#cd6d22] font-bold text-xl  block mb-4">
                     Convivencia con la naturaleza
                 </span>
-                <h2 className="text-4xl md:text-5xl font-bold text-[#333333] leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#333333] leading-tight dark:text-white">
                     ¿Por qué no se puede <br className="hidden md:block" /> ingresar con vehículos?
                 </h2>
             </div>
